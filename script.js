@@ -1,3 +1,4 @@
+// author: chatgpt
 import { squareRoot } from './mathUtils.js';
 
 document.getElementById('greetButton').addEventListener('click', function() {

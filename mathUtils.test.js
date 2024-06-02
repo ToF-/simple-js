@@ -1,3 +1,4 @@
+// author: chatgpt
 import { squareRoot } from './mathUtils.js';
 
 test('calculates the square root of 4 to be 2', () => {
