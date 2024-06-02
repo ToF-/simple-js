@@ -1,3 +1,5 @@
+import { squareRoot } from './mathUtils.js';
+
 document.getElementById('greetButton').addEventListener('click', function() {
     const number = document.getElementById('numberInput').value;
     const greeting = document.getElementById('greeting');
@@ -6,7 +8,8 @@ document.getElementById('greetButton').addEventListener('click', function() {
     greeting.innerText = 'Hello, world!';
 
     if (number !== '') {
-        result.innerText = `You entered the number: ${number}`;
+        const sqrtValue = squareRoot(number);
+        result.innerText = `The square root of ${number} is ${sqrtValue}`;
     } else {
         result.innerText = 'Please enter a number.';
     }
